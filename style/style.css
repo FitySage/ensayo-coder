@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/* 
+#F0E3CA crema
+#FF8303 naranja
+#A35709 N-Oscuro
+#1B1A17 negro
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #F0E3CA;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-image: url(../imagenes/bgrnd-nav.jpg);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #FF8303;
+    size: 50px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    background-image: url(../imagenes/banner-titulo.jpg);
+}
+
+p {
+    color: #1B1A17;
+    size: 25px;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
+    color: #A35709;
+    size: 40px;
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.actividades-lista {
+    list-style-type: square;
+    margin: 17px;
+    padding: 18px;
+    width: 60%;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #1B1A17;
+
+}
+
+strong {
+    text-decoration-line: underline;
+}
+
+footer {
+    color: #FF8303;
+    size: 35px;
+    font-size: 45px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: 0%;
+    background-image: url(../imagenes/banner-titulo.jpg);
+}
+.pie-pagina {
+    color: #FF8303;
+    size: 50px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 0;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #A35709;
+    border-radius: 15px;
+
+}
+
+.album-recuerdos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "fila0 fila0 fila0"
+    "media1 info1 info1"
+    "info2 info2 media2"
+    "media3 info3 info3"
+}
+.fila0 { grid-area: fila0;}
+.media1 { grid-area: media1; margin: auto;}
+.info1 { grid-area: info1; text-align: end; background-color: #b9a784;}
+.info2 { grid-area: info2; background-color: #ffffff;}
+.media2 { grid-area: media2; margin: auto;}
+.media3 { grid-area: media3;}
+.info3 { grid-area: info3; text-align: end; background-color: #b9a784;}
