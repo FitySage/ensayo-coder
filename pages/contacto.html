@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <header>
         <h1>Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="galeriaycomentarios.html">Galeria y comentarios</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Contacto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./actividades.html">Actividades</a>
+                        <a class="nav-link active" aria-current="page" href="./galeriaycomentarios.html">Galeria y
+                            Comentarios</a>
+                        <a class="nav-link active" aria-current="page" href="./ubicacion.html">Ubicacion</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <h2>Formulario de Contacto</h2>
@@ -45,9 +59,13 @@
     </form>
     <p>sea paciente, contestamos todas las dudas</p>
     <footer>
-        <p class="pie-pagina">Gracias por contactarnos, responderemos a tu consulta en las proximas 48hs habiles, no olvides revisar tu
+        <p class="pie-pagina">Gracias por contactarnos, responderemos a tu consulta en las proximas 48hs habiles, no
+            olvides revisar tu
             carpeta de spam si no ves nuestra respuesta </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

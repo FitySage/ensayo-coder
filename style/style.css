@@ -122,3 +122,25 @@ iframe {
 .media2 { grid-area: media2; margin: auto;}
 .media3 { grid-area: media3;}
 .info3 { grid-area: info3; text-align: end; background-color: #b9a784;}
+
+@media (max-width: 600px) {
+.album-recuerdos {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+"fila0"
+"media1"
+"info1"
+"info2"
+"media2"
+"media3"
+"info3";
+}
+}
+
+@media (max-width: 768px) {
+    .cabañas {
+        display: none;
+    }
+}
+
