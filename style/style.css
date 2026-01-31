@@ -88,11 +88,28 @@ footer {
 }
 .pie-pagina {
     color: #FF8303;
+    width: 100%;
     size: 50px;
     font-size: 50px;
     font-family: 'Cinzel', serif;
     text-align: center;
     margin: 0;
+}
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupo-formulario input[type="textx"]
+.grupo-formulario input[type="email"]
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Cinzel'
 }
 
 iframe {
@@ -102,7 +119,21 @@ iframe {
     border-radius: 15px;
 
 }
+.mapa-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
 
+.mapa-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .album-recuerdos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -145,7 +176,7 @@ grid-template-areas:
 }
 @media (max-width: 600px) {
 body {
-background-color: #f19e22
+background-color: #888888
 }
 }
 
