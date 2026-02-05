@@ -18,6 +18,15 @@ body {
     font-family: 'Cinzel', serif;
     font-size: 20px;
 }
+
+.encabezado {
+    color: #FF8303;
+    size: 50px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    background-image: url(../imagenes/banner-titulo.jpg);
+}
 nav {
     display: flex;
     align-items: center;
@@ -34,13 +43,14 @@ nav ul {
     padding: 0;
 }
 
-h1 {
-    color: #FF8303;
-    size: 50px;
-    font-size: 50px;
+h2 {
+    color: #A35709;
+    size: 40px;
+    font-size: 40px;
     font-family: 'Cinzel', serif;
     text-align: center;
-    background-image: url(../imagenes/banner-titulo.jpg);
+    text-decoration: underline;
+
 }
 
 p {
@@ -52,15 +62,6 @@ p {
     margin: 15px;
 }
 
-h2 {
-    color: #A35709;
-    size: 40px;
-    font-size: 40px;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    text-decoration: underline;
-
-}
 
 .actividades-lista {
     list-style-type: square;
@@ -180,3 +181,13 @@ background-color: #888888
 }
 }
 
+
+
+@media (max-width: 500px) {
+    .pie-pagina {
+        width: 95%;
+        size: 25px;
+        font-size: 25px;
+
+    }
+}
