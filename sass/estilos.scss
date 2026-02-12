@@ -1,29 +1,10 @@
-body {
+@use "partials/variables";
+@use "partials/generales";
+@use "partials/header-footer";
+@use "partials/body";
+@use "partials/textsconfg";
+@use "partials/map-iframe";
+@use "partials/form";
+@use "partials/grid";
 
-    background-color: #F0E3CA;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    .encabezado {
-    color: #FF8303;
-    size: 50px;
-    font-size: 50px;
-    font-family: 'Cinzel', serif;
-    text-align: center;
-    background-image: url(../imagenes/banner-titulo.jpg);
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        background-image: url(../imagenes/bgrnd-nav.jpg);
-        padding: 10px;
-        ul  {
-            display: flex;
-            list-style: none;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-    }
-    
-}
+@use "partials/mediaQ";

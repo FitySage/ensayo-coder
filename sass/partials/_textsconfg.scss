@@ -1,0 +1,43 @@
+@use "./variables" as*; 
+h2 {
+    color: $N-Oscuro;
+    size: 40px;
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    text-decoration: underline;
+
+}
+p {
+    color: $Negro;
+    size: 25px;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 15px;
+}
+
+.actividades-lista {
+    list-style-type: square;
+    margin: 17px;
+    padding: 18px;
+    width: 60%;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: $Negro;
+
+}
+
+strong {
+    text-decoration-line: underline;
+}
+
+.pie-pagina {
+    color: $naranja;
+    width: 100%;
+    size: 50px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin: 0;
+}

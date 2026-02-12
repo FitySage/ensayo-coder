@@ -1,0 +1,14 @@
+@use "./variables" as*;
+
+.encabezado {
+    color: $naranja;
+    size: 50px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    background-image: url(../imagenes/banner-titulo.jpg);
+}
+
+footer {
+    @extend .encabezado;
+}

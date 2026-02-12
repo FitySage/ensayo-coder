@@ -1,0 +1,20 @@
+.album-recuerdos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "fila0 fila0 fila0"
+    "media1 info1 info1"
+    "info2 info2 media2"
+    "media3 info3 info3";
+
+    .fila0 { grid-area: fila0;}
+     .media1 { grid-area: media1; margin: auto;}
+     .info1 { grid-area: info1; text-align: end; background-color: #b9a784;}
+     .info2 { grid-area: info2; background-color: #ffffff;}
+      .media2 { grid-area: media2; margin: auto;}
+     .media3 { grid-area: media3;}
+      .info3 { grid-area: info3; text-align: end; background-color: #b9a784;}
+}
