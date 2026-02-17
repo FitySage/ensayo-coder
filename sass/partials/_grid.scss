@@ -17,4 +17,8 @@
       .media2 { grid-area: media2; margin: auto;}
      .media3 { grid-area: media3;}
       .info3 { grid-area: info3; text-align: end; background-color: #b9a784;}
+        .recuadro-grid {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 }

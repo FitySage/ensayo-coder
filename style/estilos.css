@@ -104,6 +104,12 @@ iframe {
   border-radius: 15px;
 }
 
+.video1 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
 .grupo-formulario label {
   display: block;
   margin-bottom: 5px;
@@ -153,6 +159,10 @@ iframe {
   grid-area: info3;
   text-align: end;
   background-color: #b9a784;
+}
+.album-recuerdos .recuadro-grid {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 @media (max-width: 600px) {
