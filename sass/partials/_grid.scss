@@ -1,3 +1,4 @@
+
 .album-recuerdos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,8 +18,36 @@
       .media2 { grid-area: media2; margin: auto;}
      .media3 { grid-area: media3;}
       .info3 { grid-area: info3; text-align: end; background-color: #b9a784;}
-        .recuadro-grid {
+        .imagen-grid {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            &.respiracion {
+                animation-name: respiracion;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                @media (max-width: 1300px) {
+                    animation: none;
+                }
+            }
+            &.cabañas {
+                animation-name: reduccion;
+                animation-duration: 6s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                @media (max-width: 1300px) {
+                    animation: none;
+                }
+            }
+        }
+        @keyframes respiracion {
+            0% { transform: scale(1);}
+            50% { transform: scale(1.5);}
+            100% { transform: scale(1);}
+        }
+        @keyframes reduccion {
+            0% { transform: scale(1);}
+            50% { transform: scale(0.7);}
+            100% { transform: scale(1);}
         }
 }
