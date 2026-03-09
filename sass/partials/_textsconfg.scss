@@ -17,9 +17,16 @@ p {
     margin: 15px;
 }
 
+.titulos-grid {
+    color: $N-Oscuro;
+    size: 30px;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
 .actividades-lista {
     list-style-type: square;
-    margin: 17px;
+    margin: 17px auto;
     padding: 18px;
     width: 60%;
     font-family: 'Cinzel', serif;

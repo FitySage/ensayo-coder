@@ -1,15 +1,17 @@
-@use "./variables" as*;
+@use "./variables" as *;
 
 body {
 
     background-color: $crema;
     font-family: 'Cinzel', serif;
     font-size: 20px;
-    nav {
+}
+
+.navegador {
         display: flex;
         align-items: center;
         gap: 1rem;
-        background-image: url(../imagenes/bgrnd-nav.jpg);
+        background-color: $v-musgo;
         padding: 10px;
         ul  {
             display: flex;
@@ -18,7 +20,6 @@ body {
             margin: 0;
             padding: 0;
         }
-    }
+}
 
     
-}

@@ -17,7 +17,7 @@
   font-size: 50px;
   font-family: "Cinzel", serif;
   text-align: center;
-  background-image: url(../imagenes/banner-titulo.jpg);
+  background-color: #2D4F2B;
 }
 
 body {
@@ -25,14 +25,15 @@ body {
   font-family: "Cinzel", serif;
   font-size: 20px;
 }
-body nav {
+
+.navegador {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-image: url(../imagenes/bgrnd-nav.jpg);
+  background-color: #708A58;
   padding: 10px;
 }
-body nav ul {
+.navegador ul {
   display: flex;
   list-style: none;
   gap: 1rem;
@@ -58,9 +59,17 @@ p {
   margin: 15px;
 }
 
+.titulos-grid {
+  color: #A35709;
+  size: 30px;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
 .actividades-lista {
   list-style-type: square;
-  margin: 17px;
+  margin: 17px auto;
   padding: 18px;
   width: 60%;
   font-family: "Cinzel", serif;
