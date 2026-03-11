@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="../style/estilos.css">
 
-    <!-- <link rel="stylesheet" href="../style/style.css"> -->
 </head>
 
 <body>
@@ -27,50 +26,96 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="./actividades.html">Actividades</a>
-                        <a class="nav-link active" aria-current="page" href="./galeriaycomentarios.html"><strong>Galería y Comentarios</strong></a>
+                        <a class="nav-link active" aria-current="page" href="./galeriaycomentarios.html"><strong>Galería
+                                y Comentarios</strong></a>
                         <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
                         <a class="nav-link active" aria-current="page" href="./ubicacion.html">Ubicacion</a>
                     </div>
                 </div>
             </div>
         </nav>
-        
+
     </header>
     <main>
         <h2>Contenido audio visual de nuestros campistas</h2>
         <p>Aqui encontraras la experincia de los campistas y padres, acompañado de imagenes y videos, no dudes en subir
             tu contenido si formas parte de nuestra comunidas y si aun no lo sos mirá y atrevete a vivir lo que tus ojos
             ven</p>
-            <hr>
-        <video src="" controls></video>
-        <video src="" controls></video>
-        <iframe class="video1" width="500" height="315" src="https://www.youtube.com/embed/l4jGelDnbLU?si=Grq7pw6IgNML_7nu"
-            title="YouTube video player" frameborder="0"
+        <hr>
+
+
+        <div class="contenedor-carrusel">
+
+            <div id="carruselCampamento" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="../imagenes/capturabandera.jpg" class="d-block w-100 img-carrusel"
+                            alt="Campistas en captura de bandera">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/tiro-arco.jpeg" class="d-block w-100 img-carrusel"
+                            alt="Dianas con flechas clavadas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/fogatapostactividad.jfif" class="d-block w-100 img-carrusel"
+                            alt="Fogata post actividad">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/carrera-obstaculos.jpg" class="d-block w-100 img-carrusel"
+                            alt="Campista atravezando la carrera de obstaculos">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/equipos-enfrentados.jpg" class="d-block w-100 img-carrusel"
+                            alt="campistas en formacion de equipos para empezar actividad">
+                    </div>
+
+                </div> <button class="carousel-control-prev" type="button" data-bs-target="#carruselCampamento"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselCampamento"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+            </div>
+           
+        </div>
+         <h3 class="destacados">Nuestros campistas mas destacados</h3>
+        <iframe class="video1" width="500" height="315"
+            src="https://www.youtube.com/embed/yT1ng2tiwLA?si=CQw0Qk_Z--jHPvLD" title="YouTube video player"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <img src="" alt="Imagen de campistas 1">
-        <img src="" alt="Imagen de campistas 2">
-        <!-- Contenido aquí -->
+
+        </div>
         <section>
             <hr>
             <h3>Comentarios de los Campistas y Padres</h3>
             <article>
                 <hr>
-                <h3>Juan Pérez (Padre)</h3>
+                <h3 class="comentario-padres">Juan Pérez (Padre)</h3>
                 <hr>
                 <p>"Mi hijo tuvo una experiencia increíble en el campamento. Aprendió mucho y se divirtió aún más.
                     ¡Recomendado!"</p>
                 <hr>
             </article>
             <article>
-                <h3>María Gómez (Madre)</h3>
+                <h3 class="comentario-padres">María Gómez (Madre)</h3>
                 <hr>
                 <p>"Las actividades fueron muy bien organizadas y el personal fue muy atento. Mi hija no para de hablar
                     del campamento."</p>
                 <hr>
             </article>
             <article>
-                <h3>Carlos Rodríguez (Padre)</h3>
+                <h3 class="comentario-padres">Carlos Rodríguez (Padre)</h3>
                 <hr>
                 <p>"Un lugar fantástico para que los pequeños demonios desarrollen sus habilidades mientras se
                     divierten. ¡Volveremos el próximo verano!"</p>

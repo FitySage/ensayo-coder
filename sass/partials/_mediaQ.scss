@@ -1,10 +1,4 @@
 @media (max-width: 600px) {
-    body {
-        background-color: #888888;
-    }
-}
-
-@media (max-width: 600px) {
     .album-recuerdos {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -21,6 +15,33 @@
         .cabañas {
             display: none;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-carrusel {
+        max-width: 95%;
+        margin: 20px auto;
+    .img-carrusel {
+        height: 400px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .actividades-lista2 {
+        gap: 40px;
+        padding: 0 15px;
+    }
+    .actividad-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-contacto {
+        flex-direction: column; 
+        width: 95%;
     }
 }
 

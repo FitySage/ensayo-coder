@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="../style/estilos.css">
 
-    <!-- <link rel="stylesheet" href="../style/style.css"> -->
 </head>
 
 <body>
@@ -27,42 +26,60 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="./actividades.html">Actividades</a>
-                        <a class="nav-link active" aria-current="page" href="./galeriaycomentarios.html">Galeria y Comentarios</a>
-                        <a class="nav-link active" aria-current="page" href="./contacto.html"><strong>Contacto</strong></a>
+                        <a class="nav-link active" aria-current="page" href="./galeriaycomentarios.html">Galeria y
+                            Comentarios</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="./contacto.html"><strong>Contacto</strong></a>
                         <a class="nav-link active" aria-current="page" href="./ubicacion.html">Ubicacion</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    
+
     <main>
         <h2>Formulario de Contacto</h2>
-        <p>Crees poder sobrevivir el verano? entonces no dudes en incribirte, los cupos son limitados
+        <p>¿Crees poder sobrevivir el verano? Entonces no dudes en inscribirte, los cupos son limitados
             y la diversión está garantizada. ¡Te esperamos en el campamento más espeluznante y emocionante del
             inframundo!
         </p>
-
-
         <hr>
+
+        <div class="contenedor-contacto">
+            
+            <form action="submit" method="post" class="formulario">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="25" rows="4" required></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="btn-enviar">
+                <p class="nota-form"><small>Sea paciente, contestamos todas las dudas antes de la próxima luna llena.</small></p>
+            </form>
+
+            <aside class="info-extra">
+                <h3>Otras Vías de Contacto</h3>
+            
+                
+                <ul class="lista-info">
+                    <li><strong>Teléfono:</strong> 666-000-CAMP</li>
+                    <li><strong>Cuervo Mensajero:</strong> Despachar desde la ventana más alta.</li>
+                    <li><strong>Señales de Humo:</strong> Solo usar madera de roble oscuro.</li>
+                    <li><strong>Dirección:</strong> 5ta Paila a la izquierda, Círculo de la Gula.</li>
+                </ul>
+            </aside>
+
+        </div>
+        
     </main>
-    <form action="submit" method="post">
-        <div class="grupo-formulario">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-        </div>
-        <div class="grupo-formulario">
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required><br><br>
-        </div>
-        <div class="grupo-formulario">
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" cols="25" rows="4" required></textarea><br><br>
-        </div>
-        <input type="submit" value="Enviar">
-        <hr>
-    </form>
-    <p>sea paciente, contestamos todas las dudas</p>
+
     <footer>
         <p class="pie-pagina">Gracias por contactarnos, responderemos a tu consulta en las proximas 48hs habiles, no
             olvides revisar tu

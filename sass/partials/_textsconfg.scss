@@ -28,15 +28,44 @@ p {
     list-style-type: square;
     margin: 17px auto;
     padding: 18px;
-    width: 60%;
+    width: 80%;
     font-family: 'Cinzel', serif;
     font-size: 20px;
     color: $Negro;
+}
+.actividad-texto {
+    text-align: center;
+    h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: $N-Oscuro;
+    }
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+}
 
+.subtexto-tarjetas {
+    color: $N-Oscuro;
+    size: 45px;
+    font-size: 45px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+.destacados {
+    @extend .subtexto-tarjetas;
 }
 
 strong {
     text-decoration-line: underline;
+}
+
+.comentario-padres {
+    font-family: 'Cinzel', serif;
+    text-align: center;
 }
 
 .pie-pagina {

@@ -71,14 +71,41 @@ p {
   list-style-type: square;
   margin: 17px auto;
   padding: 18px;
-  width: 60%;
+  width: 80%;
   font-family: "Cinzel", serif;
   font-size: 20px;
   color: #1B1A17;
 }
 
+.actividad-texto {
+  text-align: center;
+}
+.actividad-texto h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #A35709;
+}
+.actividad-texto p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.subtexto-tarjetas, .destacados {
+  color: #A35709;
+  size: 45px;
+  font-size: 45px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+
 strong {
   text-decoration-line: underline;
+}
+
+.comentario-padres {
+  font-family: "Cinzel", serif;
+  text-align: center;
 }
 
 .pie-pagina {
@@ -119,18 +146,75 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-.grupo-formulario label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.contenedor-contacto {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 40px auto;
+  width: 80%;
+  font-family: "Cinzel", serif;
 }
-.grupo-formulario label input[type=text] .grupo-formulario label input[type=email] .grupo-formulario label textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: "Cinzel";
+
+.formulario {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #1B1A17;
+}
+.formulario .btn-enviar {
+  background-color: #FF8303;
+  color: #A35709;
+  padding: 10px 20px;
+  border: 2px solid #A35709;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.formulario .btn-enviar:hover {
+  background-color: #A35709;
+  color: #FF8303;
+}
+.formulario .nota-form {
+  margin-top: 15px;
+  text-align: center;
+  color: #A35709;
+  font-size: 16px;
+}
+
+.info-extra {
+  flex: 1;
+  background-color: transparent;
+  border: 3px solid #708A58;
+  color: #1B1A17;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+.info-extra h3 {
+  color: #A35709;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.info-extra .lista-info {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 20px;
+}
+.info-extra .lista-info li {
+  margin-bottom: 15px;
+  color: #708A58;
+}
+.info-extra .lista-info li strong {
+  color: #2D4F2B;
+  text-decoration: underline;
 }
 
 .album-recuerdos {
@@ -218,11 +302,52 @@ iframe {
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    background-color: #888888;
-  }
+.contenedor-carrusel {
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
 }
+.contenedor-carrusel .img-carrusel {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.actividades-lista2 {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.actividades-lista2 .actividad-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  background-color: #FF8303;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.actividades-lista2 .actividad-item:hover {
+  transform: translateY(-5px);
+}
+.actividades-lista2 .actividad-item .actividad-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.actividades-lista2 .actividad-item .actividad-texto {
+  padding: 30px;
+  flex: 1;
+}
+
 @media (max-width: 600px) {
   .album-recuerdos {
     grid-template-columns: 1fr;
@@ -233,6 +358,30 @@ iframe {
 @media (max-width: 600px) and (max-width: 768px) {
   .cabañas {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-carrusel {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+  .contenedor-carrusel .img-carrusel {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .actividades-lista2 {
+    gap: 40px;
+    padding: 0 15px;
+  }
+  .actividad-img {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    width: 95%;
   }
 }
 @media (max-width: 500px) {
