@@ -41,7 +41,13 @@
 @media (max-width: 768px) {
     .contenedor-contacto {
         flex-direction: column; 
-        width: 95%;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .formulario,
+    .info-extra {
+        padding: 20px;
     }
 }
 
